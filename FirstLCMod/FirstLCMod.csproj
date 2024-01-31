@@ -58,7 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patches\DoorLockPatch.cs" />
-    <Compile Include="Patches\KeyItemPatch.cs" />
     <Compile Include="Patches\PlayerControllerBPatch.cs" />
     <Compile Include="Patches\GrabbableObjectPatch.cs" />
     <Compile Include="Plugin.cs" />

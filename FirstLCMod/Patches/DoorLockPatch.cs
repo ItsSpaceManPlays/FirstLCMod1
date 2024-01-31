@@ -13,7 +13,7 @@ namespace FirstLCMod.Patches
     {
         static ManualLogSource mls = BepInEx.Logging.Logger.CreateLogSource("iTappedSpace.FirstMod");
 
-        [HarmonyPatch("Start")]
+        [HarmonyPatch("Awake")]
         [HarmonyPostfix]
         static void doorReLock()
         {

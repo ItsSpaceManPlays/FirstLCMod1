@@ -21,6 +21,8 @@ namespace FirstLCMod
 
         private static FirstMod Instance;
 
+        internal static RoundManager currentRound;
+
         internal static ManualLogSource mls { get; set; }
 
         void Awake()

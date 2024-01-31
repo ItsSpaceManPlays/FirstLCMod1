@@ -39,6 +39,7 @@ namespace FirstLCMod
             harmony.PatchAll(typeof(FirstMod));
             harmony.PatchAll(typeof(PlayerControllerBPatch));
             harmony.PatchAll(typeof(GrabbableObjectPatch));
+            harmony.PatchAll(typeof(RoundManagerPatch));
         }
     }
 }

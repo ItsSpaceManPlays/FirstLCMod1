@@ -17,5 +17,12 @@ namespace FirstLCMod.Patches
         {
             ___sprintMeter = 1f;
         }
+
+        [HarmonyPatch("Start")]
+        [HarmonyPrefix]
+        static void setCurrentPlayer(PlayerControllerB __instance)
+        {
+            FirstMod.currentPlayer = __instance;
+        }
     }
 }

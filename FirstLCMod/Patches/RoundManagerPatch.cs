@@ -20,5 +20,14 @@ namespace FirstLCMod.Patches
             // update the current round in FirstMod.cs
             FirstMod.currentRound = __instance;
         }
+
+        [HarmonyPatch("Start")]
+        [HarmonyPrefix]
+        static void SetIsHost()
+        {
+            FirstMod.mls.LogInfo("Host status: " + RoundManager.Instance.NetworkManager.IsHost);
+            FirstMod.isHost = RoundManager.Instance.NetworkManager.IsHost;
+            FirstMod.isServer = RoundManager.Instance.NetworkManager.IsServer;
+        }
     }
 }

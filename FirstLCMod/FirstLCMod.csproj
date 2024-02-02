@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patches\DoorLockPatch.cs" />
+    <Compile Include="Patches\HUDManagerPatch.cs" />
     <Compile Include="Patches\PlayerControllerBPatch.cs" />
     <Compile Include="Patches\GrabbableObjectPatch.cs" />
     <Compile Include="Patches\RoundManagerPatch.cs" />

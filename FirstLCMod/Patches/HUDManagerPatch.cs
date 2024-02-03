@@ -30,7 +30,7 @@ namespace FirstLCMod.Patches
 
                 if (chatMessage.StartsWith("/") && FirstMod.isHost && FirstMod.isServer && FirstMod.commandsEnabled)
                 {
-                    if (chatMessage.StartsWith("/scrapdebug"))
+                    if (chatMessage.StartsWith("/scrap"))
                     {
                         // get scrap name
 

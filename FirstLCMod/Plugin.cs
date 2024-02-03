@@ -51,6 +51,7 @@ namespace FirstLCMod
             harmony.PatchAll(typeof(HUDManagerPatch));
         }
 
+        // StartOfRound.Instance.allItemsList investigate this plsssss
         static public Item getItem(string itemName)
         {
             if (currentRound != null)
